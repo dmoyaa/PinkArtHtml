@@ -1,5 +1,7 @@
 package co.edu.unbosque.Operaciones;
 
+import com.google.gson.Gson;
+
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -28,7 +30,7 @@ public class AgregarObras extends HttpServlet {
             files.add(File.separator+Ruta_Subida+file.getName());
         }
         PrintWriter out = response.getWriter();
-        out.println(new Gson());
+        out.println(new Gson().toJson(files));
 
     }
 

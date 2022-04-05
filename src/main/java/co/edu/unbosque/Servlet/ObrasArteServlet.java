@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-@WebServlet(name = "uploadFile", value = "/upload-file")
+@WebServlet(name = "ObrasArteServlet", value = "/upload-file")
 @MultipartConfig(fileSizeThreshold = 1024 * 1024,
     maxFileSize = 10024 * 10024 * 5,
     maxRequestSize = 1024 * 1024 * 5 * 5)
@@ -45,7 +45,7 @@ public class ObrasArteServlet extends HttpServlet {
         catch (ServletException e) {
             e.printStackTrace();
         }
-
+        response.sendRedirect("./prueba.html");
    }
 
 
