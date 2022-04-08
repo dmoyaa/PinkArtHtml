@@ -38,9 +38,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Taller3-PinkArtHTML" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/co/edu/unbosque" />
   </component>
-  <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 26.1.0">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\david\Archivos David\PinkArtHtml\src\main\java\co\edu\unbosque" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\david\Archivos David\PinkArtHtml\src\main\csv" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.piezas.html">
     <configuration name="JBoss/WildFly 26.1.0" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 26.1.0" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -113,10 +121,10 @@
         </option>
       </method>
     </configuration>
-    <configuration name="artistas.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PinkArtHtml/Taller3/target/Taller3-1.0-SNAPSHOT/artistas.html" useBuiltInWebServerPort="true">
+    <configuration name="artistas.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Taller3-1.0-SNAPSHOT/artistas.html">
       <method v="2" />
     </configuration>
-    <configuration name="artistas.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Taller3-1.0-SNAPSHOT/artistas.html">
+    <configuration name="piezas.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Taller3-1.0-SNAPSHOT/piezas.html">
       <method v="2" />
     </configuration>
     <configuration name="prueba.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PinkArtHtml/Taller3/target/Taller3-1.0-SNAPSHOT/prueba.html" useBuiltInWebServerPort="true">
@@ -131,18 +139,18 @@
     <list>
       <item itemvalue="JavaScript Debug.artistas.html" />
       <item itemvalue="JavaScript Debug.prueba.html" />
-      <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 26.1.0" />
-      <item itemvalue="JavaScript Debug.artistas.html (2)" />
       <item itemvalue="JavaScript Debug.prueba.html (1)" />
       <item itemvalue="JavaScript Debug.prueba.html (2)" />
+      <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 26.1.0" />
+      <item itemvalue="JavaScript Debug.piezas.html" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.prueba.html" />
+        <item itemvalue="JavaScript Debug.piezas.html" />
         <item itemvalue="JavaScript Debug.artistas.html" />
+        <item itemvalue="JavaScript Debug.prueba.html" />
         <item itemvalue="JavaScript Debug.prueba.html (1)" />
         <item itemvalue="JavaScript Debug.prueba.html (2)" />
-        <item itemvalue="JavaScript Debug.artistas.html (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -156,6 +164,7 @@
       <updated>1649137692973</updated>
       <workItem from="1649137703978" duration="2104000" />
       <workItem from="1649175284482" duration="4620000" />
+      <workItem from="1649427528462" duration="4927000" />
     </task>
     <servers />
   </component>
