@@ -16,7 +16,7 @@
         
         <div class="texto-centrado">
             <img class="logo-artist" src="./Resources/pinkart2.png" alt="">
-            BIENVENIDO A TU ESPACIO, ARTISTA
+            ESTAS SON LAS ÚLTIMAS OBRAS AGREGADAS
         </div>
     </header>     
     <body>
@@ -24,18 +24,21 @@
         <script>
             var imagesDiv = document.getElementById("images")
 
-            fetch("list-files")
-                .then(Response => response.jason())
+            fetch("AgregarObras")
+                .then(response => response.json())
                 .then(images => {
                     images.map(image=>{
-                        let imgElem = document.createElement("img")
-                        imgElem.src= "./"+image
-                        imgElem.width = 300;
+                        let imgElem = document.createElement("img");
+                        imgElem.src= "./"+image;
+                        imgElem.width = 500;
 
                         imagesDiv.appendChild(imgElem);
+
                     })
+
                     
                 })
+
             
         </script>
     </body>
