@@ -1,9 +1,5 @@
 package co.edu.unbosque.Operaciones;
 
-import co.edu.unbosque.Datos.DatosObrasArte;
-import co.edu.unbosque.Datos.DatosUsuario;
-import co.edu.unbosque.Servlet.ObrasArteServlet;
-import com.google.gson.Gson;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,32 +12,26 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name="AgregarObras" , value = "AgregarObras")
+@WebServlet(name="listFiles" , value = "/list-Files")
 public class AgregarObras extends HttpServlet {
 
-    private String RUTA_SUBIDA= "subidos";
-    private ObrasArteServlet obras = new ObrasArteServlet();
+    private String Ruta_Subida= "subidos";
 
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public void DoGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-        response.setContentType("application/json");
-        System.out.println("lo intenté pero estoy pendejo");
+        response.setContentType("application/jason");
 
-        String ruta_Archivo = getServletContext().getRealPath("") + File.separator+RUTA_SUBIDA;
+        String ruta_Archivo = getServletContext().getRealPath("") + File.separator+Ruta_Subida;
         File DirSubida = new File(ruta_Archivo);
 
-        List<String> files = new ArrayList<String>();
+        List<String> files = new ArrayList<>();
         for (File file : DirSubida.listFiles()){
-            files.add(RUTA_SUBIDA+File.separator+file.getName());
-
+            files.add(File.separator+Ruta_Subida+file.getName());
         }
-
-        System.out.println(files.toString());
         PrintWriter out = response.getWriter();
-        out.println(new Gson().toJson(files));
-
-
+        // out.println(new Gson());
 
     }
 
 }
+

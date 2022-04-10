@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Taller3" />
         <module name="PinkArtHtml" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="PinkArtHtml" target="16" />
+    </bytecodeTargetLevel>
   </component>
 </project>

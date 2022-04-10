@@ -1,41 +1,52 @@
 package co.edu.unbosque.Servlet;
-
-import co.edu.unbosque.Datos.DatosUsuario;
-import co.edu.unbosque.Operaciones.LoginUsuario;
-
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.List;
 
-@WebServlet(name = "login", value = "/LoginUsuario")
-public class LoginServlet extends HttpServlet {
-    private String message;
+import co.edu.unbosque.Datos.DatosUsuario;
+import co.edu.unbosque.Operaciones.AgregarUsuario;
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.*;
+import jakarta.servlet.annotation.*;
+import static co.edu.unbosque.Operaciones.AgregarUsuario.getUsers;
+
+@WebServlet(name = "login", value = "/login")
+class LoginServlet extends HttpServlet {
 
     public void init() {
-        message = "Hello World!";
     }
 
-
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         response.setContentType("text/html");
 
-        String username = request.getParameter("username");
+        String username = request.getParameter("name");
         String password = request.getParameter("password");
         String role = request.getParameter("role");
-        List<DatosUsuario> userList = new LoginUsuario().leerUsuario().get();
-        DatosUsuario userFound = userList.stream().filter(user -> username.equals(user.getUsername()) && password.equals(user.getPassword())).findFirst().get();
 
-        // Hello
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>" + message  + "</h1>");
-        out.println("</body></html>");
-    }
+        AgregarUsuario uService = new AgregarUsuario();
+        uService.setRuta(getServletContext().getRealPath("") + File.separator + "resources" + File.separator + "users.csv");
 
-    public void destroy() {
+        List<DatosUsuario> users = getUsers().get();
+
+        DatosUsuario userFounded = users.stream()
+                .filter(user -> username.equals(user.getUsername()) && password.equals(user.getPassword()) && role.equals(user.getRole()))
+                .findFirst()
+                .orElse(null);
+
+        if (userFounded != null) {
+            request.setAttribute("role", userFounded.getRole());
+            request.setAttribute("coins", userFounded.getCoins());
+            request.setAttribute("username", userFounded.getUsername());
+
+            if (role.equals("artista")) {
+                RequestDispatcher dispatcher = request.getRequestDispatcher("./artistas.html");
+                dispatcher.forward(request, response);
+            } else if (role.equals("comprador")) {
+                RequestDispatcher dispatcher = request.getRequestDispatcher("./");
+                dispatcher.forward(request, response);
+            }
+        } else {
+            response.sendRedirect("./401.html");
+        }
     }
 }

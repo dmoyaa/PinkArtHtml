@@ -2,34 +2,11 @@ package co.edu.unbosque.Datos;
 
 import java.util.Objects;
 
-public class DatosUsuario {
+public class DatosUsuario{
     private String username;
     private String password;
     private String role;
-
-    public DatosUsuario(String username, String password, String role) {
-        this.username = username;
-        this.password = password;
-        this.role = role;
-    }
-
-    @Override
-    public String toString() {
-        return "Usuario{" + "username = " + username + ", password = " + password + ", role =" + role + "}";
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        DatosUsuario usuario = (DatosUsuario) o;
-        return Objects.equals(username, usuario.username) && Objects.equals(password, usuario.password) && Objects.equals(role, usuario.role);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(username, password, role);
-    }
+    private String coins;
 
     public String getUsername() {
         return username;
@@ -54,6 +31,30 @@ public class DatosUsuario {
     public void setRole(String role) {
         this.role = role;
     }
+
+    public String getCoins() {
+        return coins;
+    }
+
+    public void setCoins(String coins) {
+        this.coins = coins;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" + "username = " + username + ", password = " + password + ", role =" + role + "}";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        DatosUsuario user = (DatosUsuario) o;
+        return Objects.equals(username, user.username) && Objects.equals(password, user.password) && Objects.equals(role, user.role);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(username, password, role);
+    }
 }
-
-
