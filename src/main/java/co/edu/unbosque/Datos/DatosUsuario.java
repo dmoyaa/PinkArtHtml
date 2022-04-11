@@ -2,7 +2,7 @@ package co.edu.unbosque.Datos;
 
 import java.util.Objects;
 
-public class DatosUsuario{
+public class DatosUsuario {
     private String username;
     private String password;
     private String role;

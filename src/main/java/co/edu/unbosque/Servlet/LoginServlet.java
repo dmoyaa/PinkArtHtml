@@ -1,16 +1,22 @@
 package co.edu.unbosque.Servlet;
-import java.io.*;
-import java.util.List;
 
 import co.edu.unbosque.Datos.DatosUsuario;
 import co.edu.unbosque.Operaciones.AgregarUsuario;
-import jakarta.servlet.RequestDispatcher;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+
 import static co.edu.unbosque.Operaciones.AgregarUsuario.getUsers;
 
 @WebServlet(name = "login", value = "/login")
+
 class LoginServlet extends HttpServlet {
 
     public void init() {
@@ -26,7 +32,8 @@ class LoginServlet extends HttpServlet {
         AgregarUsuario uService = new AgregarUsuario();
         uService.setRuta(getServletContext().getRealPath("") + File.separator + "resources" + File.separator + "users.csv");
 
-        List<DatosUsuario> users = getUsers().get();
+        List<DatosUsuario> users;
+        users = getUsers().get();
 
         DatosUsuario userFounded = users.stream()
                 .filter(user -> username.equals(user.getUsername()) && password.equals(user.getPassword()) && role.equals(user.getRole()))

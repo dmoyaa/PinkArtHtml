@@ -1,96 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="PinkArtHtml:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd5cdde1-49d8-4f04-85b4-2c3260b2d68d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/PinkArtHtml_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/PinkArtHtml_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_opencsv_opencsv_5_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jakarta_servlet_api_5_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PinkArtHtml.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Operaciones/AgregarUsuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Servlet/SignupServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Datos/DatosUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Datos/DatosUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Operaciones/AgregarObras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Operaciones/AgregarObras.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Operaciones/LoginUsuario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Servlet/ObrasArteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Servlet/ObrasArteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/Era.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/Location.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/Lune.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/PinkART.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/account-money.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/banner-1763476_1920.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/colour-1241879_1920.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/credit-card.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/d+.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/emotions-3459666_1920.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/mercado-pago.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/mercadolibre.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/payment-agreement.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/payment.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/pinkart2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/protected.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/pse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/qrx2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/shipping.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/shopping-cart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/star+.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/transfer.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/truckgiftv4@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resources/view-more.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/artistas.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/artistas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/piezas.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/piezas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/prueba.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/prueba.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registro.html" beforeDir="false" />
-    </list>
+    <list default="true" id="09097394-7ac6-47ee-a82f-f61b2dbf6f17" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="27aU9t3zWAz6uHgTJgIKhu9rm3Q" />
+  <component name="ProjectId" id="27d2pZTDr5Los8Kcotl7NkvLGzw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -98,38 +26,148 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\cindy\Repositorios\PinkArtHtml\src\main\webapp" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\david\Documents\Archivos David\PinkArtHtml\src\main\webapp" />
+      <recent name="C:\Users\david\Documents\Archivos David\PinkArtHtml\src\main\resources" />
+      <recent name="C:\Users\david\Documents\Archivos David\PinkArtHtml\src\main" />
+      <recent name="C:\Users\david\Documents\Archivos David\PinkArtHtml\src\main\java\co\edu\unbosque" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="co.edu.unbosque.Datos" />
+      <recent name="co.edu.unbosque.Servlet" />
+      <recent name="co.edu.unbosque.Operaciones" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="excludedTypes">
+      <set>
+        <option value="JBossConfiguration" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 26.0.1.Final">
+    <configuration name="JBoss/WildFly 26.0.1.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 26.0.1.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="PinkArtHtml:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="SERVER" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" value="main-server-group" />
+        <option name="USERNAME" value="" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="JBoss" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55281" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="PinkArtHtml:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="artistas.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/PinkArtHtml-1.0-SNAPSHOT/artistas.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/PinkArtHtml-1.0-SNAPSHOT/index.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/PinkArtHtml-1.0-SNAPSHOT/index.jsp">
+      <method v="2" />
+    </configuration>
+    <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/PinkArtHtml-1.0-SNAPSHOT/login.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="prueba.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/PinkArtHtml-1.0-SNAPSHOT/prueba.html">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.artistas.html" />
+      <item itemvalue="JavaScript Debug.index.jsp" />
+      <item itemvalue="JavaScript Debug.login.html" />
+      <item itemvalue="JavaScript Debug.prueba.html" />
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 26.0.1.Final" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.artistas.html" />
+        <item itemvalue="JavaScript Debug.login.html" />
+        <item itemvalue="JavaScript Debug.prueba.html" />
+        <item itemvalue="JavaScript Debug.index.jsp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bd5cdde1-49d8-4f04-85b4-2c3260b2d68d" name="Changes" comment="" />
-      <created>1649557543477</created>
+      <changelist id="09097394-7ac6-47ee-a82f-f61b2dbf6f17" name="Changes" comment="" />
+      <created>1649635827059</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1649557543477</updated>
-      <workItem from="1649557551955" duration="793000" />
+      <updated>1649635827059</updated>
+      <workItem from="1649635829309" duration="4695000" />
+      <workItem from="1649640688738" duration="5025000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>

@@ -1,17 +1,15 @@
 package co.edu.unbosque.Servlet;
 
-import co.edu.unbosque.Datos.DatosUsuario;
 import co.edu.unbosque.Operaciones.AgregarUsuario;
-import jakarta.servlet.RequestDispatcher;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
 
 @WebServlet(name = "signup", value = "/signup")
 class SignupServlet extends HttpServlet {
@@ -32,11 +30,11 @@ class SignupServlet extends HttpServlet {
         req.setAttribute("username", nombre);
         req.setAttribute("coins", "0");
 
-        if (role.equals("artista")) {
+        if (role.equals("Artista")) {
             RequestDispatcher dispatcher = req.getRequestDispatcher("./artistas.html");
             dispatcher.forward(req, resp);
-        } else if (role.equals("comprador")) {
-            RequestDispatcher dispatcher = req.getRequestDispatcher("./");
+        } else if (role.equals("Comprador")) {
+            RequestDispatcher dispatcher = req.getRequestDispatcher("./piezas.html");
             dispatcher.forward(req, resp);
         }
     }

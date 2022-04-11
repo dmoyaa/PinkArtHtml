@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="Taller3-1.0-SNAPSHOT.war">
+    <root id="archive" name="PinkArtHtml2-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="PinkArtHtml:war exploded" />
     </root>
   </artifact>

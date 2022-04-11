@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="PinkArtHtml" target="16" />
+      <module name="PinkArtHtml" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

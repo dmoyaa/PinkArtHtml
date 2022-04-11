@@ -1,6 +1,5 @@
 package co.edu.unbosque.Operaciones;
 import co.edu.unbosque.Datos.DatosUsuario;
-import co.edu.unbosque.Datos.DatosUsuario;
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 import com.opencsv.bean.HeaderColumnNameMappingStrategy;
