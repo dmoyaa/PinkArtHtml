@@ -12,7 +12,7 @@ import java.util.Optional;
 
 public class AgregarUsuario {
 
-    private static String ruta ="users.csv";
+    private static String ruta ="usuarios.csv";
 
     public static Optional<List<DatosUsuario>> getUsers() throws IOException {
         List<DatosUsuario> users;
@@ -47,7 +47,7 @@ public class AgregarUsuario {
         String newLine = username + "," + password + "," + role + "," + coins + "\n";
 
         System.out.println(path + File.separator + "resources" + File.separator + "users.csv" + "Create");
-        FileOutputStream os = new FileOutputStream(path + "resources" + File.separator + "users.csv", append);
+        FileOutputStream os = new FileOutputStream(path  + "WEB-INF/classes" + File.separator + "usuarios.csv", append);
         os.write(newLine.getBytes());
         os.close();
     }
@@ -56,7 +56,7 @@ public class AgregarUsuario {
         String newLine = username + "," + password + "," + role + "," + "0" + "\n";
 
         System.out.println(path + File.separator + "resources" + File.separator + "users.csv" + "Create");
-        FileOutputStream os = new FileOutputStream(path + "resources" + File.separator + "users.csv", append);
+        FileOutputStream os = new FileOutputStream(path  + "WEB-INF/classes" + File.separator + "usuarios.csv", append);
         os.write(newLine.getBytes());
         os.close();
     }

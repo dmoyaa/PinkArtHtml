@@ -30,8 +30,8 @@ class LoginServlet extends HttpServlet {
         String role = request.getParameter("role");
 
         AgregarUsuario uService = new AgregarUsuario();
-        uService.setRuta(getServletContext().getRealPath("") + File.separator + "resources" + File.separator + "users.csv");
-
+        uService.setRuta(getServletContext().getRealPath("") + File.separator +  "WEB-INF/classes" + File.separator + "usuarios.csv");
+         /*
         List<DatosUsuario> users;
         users = getUsers().get();
 
@@ -40,11 +40,11 @@ class LoginServlet extends HttpServlet {
                 .findFirst()
                 .orElse(null);
 
-        if (userFounded != null) {
+       if (userFounded != null) {
             request.setAttribute("role", userFounded.getRole());
             request.setAttribute("coins", userFounded.getCoins());
             request.setAttribute("username", userFounded.getUsername());
-
+            */
             if (role.equals("artista")) {
                 RequestDispatcher dispatcher = request.getRequestDispatcher("./artistas.html");
                 dispatcher.forward(request, response);
@@ -52,8 +52,12 @@ class LoginServlet extends HttpServlet {
                 RequestDispatcher dispatcher = request.getRequestDispatcher("./");
                 dispatcher.forward(request, response);
             }
-        } else {
+        /*} else {
             response.sendRedirect("./401.html");
         }
+
+         */
+
+
     }
 }
