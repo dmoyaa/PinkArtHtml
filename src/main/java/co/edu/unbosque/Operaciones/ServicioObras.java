@@ -12,10 +12,10 @@ public class ServicioObras {
 
     private ArrayList<DatosObrasArte> ArrayObras = new ArrayList<DatosObrasArte>();
 
-    public void crearObra(String titulo, int precio, File rutaImag) throws IOException {
+    public void crearObra(String titulo, int precio, File rutaImag, String path) throws IOException {
         DatosObrasArte obra = new DatosObrasArte(titulo,precio,rutaImag);
         ArrayObras.add(obra);
-        CSVWriter writer = new CSVWriter(new FileWriter("Obras.csv"));
+        CSVWriter writer = new CSVWriter(new FileWriter(path +"WEB-INF/classes" + File.separator + "usuarios.csv"));
         for (int i = 0; i<ArrayObras.size(); i++){
 
             System.out.println("Entro a intentar escribir");

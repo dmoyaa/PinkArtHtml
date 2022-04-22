@@ -10,13 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09097394-7ac6-47ee-a82f-f61b2dbf6f17" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Obras.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Operaciones/AgregarUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Operaciones/AgregarUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Operaciones/Obras.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Operaciones/Obras.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Operaciones/ServicioObras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Operaciones/ServicioObras.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Servlet/ObrasArteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Servlet/ObrasArteServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/PinkArtHtml2-1.0-SNAPSHOT/WEB-INF/classes/usuarios.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/PinkArtHtml2-1.0-SNAPSHOT/WEB-INF/classes/usuarios.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PinkArtHtml2-1.0-SNAPSHOT/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/PinkArtHtml2-1.0-SNAPSHOT/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +36,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aulainformatica.UNBOSQUE\Desktop\PinkArtHtml\src\main\resources" />
       <recent name="C:\Users\david\Documents\Archivos David\PinkArtHtml\src\main\webapp" />
       <recent name="C:\Users\david\Documents\Archivos David\PinkArtHtml\src\main\resources" />
       <recent name="C:\Users\david\Documents\Archivos David\PinkArtHtml\src\main" />
@@ -176,11 +175,22 @@
       <workItem from="1649635829309" duration="4695000" />
       <workItem from="1649640688738" duration="5025000" />
       <workItem from="1650561429030" duration="1785000" />
-      <workItem from="1650646412669" duration="989000" />
+      <workItem from="1650646412669" duration="3385000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

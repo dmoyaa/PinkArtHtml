@@ -59,7 +59,7 @@ class ObrasArteServlet extends HttpServlet {
             e.printStackTrace();
         }
         DatosObrasArte obra = new DatosObrasArte(t,p,imagen);
-        new ServicioObras().crearObra(t,p,imagen);
+        new ServicioObras().crearObra(t,p,imagen, rutaArchivo);
         RequestDispatcher dispatcher= request.getRequestDispatcher("./prueba.html");
         try{
             dispatcher.forward(request, response);
