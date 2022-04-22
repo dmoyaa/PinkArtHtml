@@ -53,7 +53,7 @@ public class AgregarUsuario {
     }
 
     public void crearUsuario(String username, String password, String role, String path, boolean append) throws IOException {
-        String newLine = username + "," + password + "," + role + "," + "0" + "\n";
+        String newLine = "\n"+username + "," + password + "," + role + "," + "0" + "\n";
 
         System.out.println(path + File.separator + "resources" + File.separator + "users.csv" + "Create");
         FileOutputStream os = new FileOutputStream(path  + "WEB-INF/classes" + File.separator + "usuarios.csv", append);

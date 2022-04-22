@@ -22,41 +22,40 @@ class LoginServlet extends HttpServlet {
     public void init() {
     }
 
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         response.setContentType("text/html");
 
         String username = request.getParameter("name");
         String password = request.getParameter("password");
-        String role = request.getParameter("role");
 
         AgregarUsuario uService = new AgregarUsuario();
         uService.setRuta(getServletContext().getRealPath("") + File.separator +  "WEB-INF/classes" + File.separator + "usuarios.csv");
-         /*
+
         List<DatosUsuario> users;
         users = getUsers().get();
 
         DatosUsuario userFounded = users.stream()
-                .filter(user -> username.equals(user.getUsername()) && password.equals(user.getPassword()) && role.equals(user.getRole()))
+                .filter(user -> username.equals(user.getUsername()) && password.equals(user.getPassword()) )
                 .findFirst()
                 .orElse(null);
 
        if (userFounded != null) {
             request.setAttribute("role", userFounded.getRole());
-            request.setAttribute("coins", userFounded.getCoins());
             request.setAttribute("username", userFounded.getUsername());
-            */
-            if (role.equals("artista")) {
+           System.out.println(userFounded.getRole());
+
+            if (userFounded.getRole().equals("Artista")) {
                 RequestDispatcher dispatcher = request.getRequestDispatcher("./artistas.html");
                 dispatcher.forward(request, response);
-            } else if (role.equals("comprador")) {
+            } else if (userFounded.getRole().equals("Comprador")) {
                 RequestDispatcher dispatcher = request.getRequestDispatcher("./");
                 dispatcher.forward(request, response);
             }
-        /*} else {
+        } else {
             response.sendRedirect("./401.html");
         }
 
-         */
+
 
 
     }
