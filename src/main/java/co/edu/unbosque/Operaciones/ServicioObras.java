@@ -2,34 +2,54 @@ package co.edu.unbosque.Operaciones;
 
 import co.edu.unbosque.Datos.DatosObrasArte;
 import com.opencsv.CSVWriter;
+import com.opencsv.bean.CsvToBean;
+import com.opencsv.bean.CsvToBeanBuilder;
+import com.opencsv.bean.HeaderColumnNameMappingStrategy;
+import com.opencsv.bean.MappingStrategy;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
 public class ServicioObras {
 
     private ArrayList<DatosObrasArte> ArrayObras = new ArrayList<DatosObrasArte>();
 
-    public void crearObra(String titulo, int precio, File rutaImag, String path) throws IOException {
-        DatosObrasArte obra = new DatosObrasArte(titulo,precio,rutaImag);
-        ArrayObras.add(obra);
-        CSVWriter writer = new CSVWriter(new FileWriter(path +"WEB-INF/classes" + File.separator + "usuarios.csv"));
-        for (int i = 0; i<ArrayObras.size(); i++){
+    private static String ruta = "Obras.csv";
 
-            System.out.println("Entro a intentar escribir");
-            String[] linea = new String[3];
-            linea[0] = ArrayObras.get(i).getTitulo();
+    public static Optional<List<DatosObrasArte>> getObras() throws IOException {
+        List<DatosObrasArte> obrasArtes;
+        System.out.printf(ruta);
+        try (InputStream is = new FileInputStream(ruta)) {
 
-            linea[1]= String.valueOf(ArrayObras.get(i).getPrecio());
+            MappingStrategy Column;
+            HeaderColumnNameMappingStrategy<DatosObrasArte> strategy = new HeaderColumnNameMappingStrategy<>();
+            strategy.setType(DatosObrasArte.class);
+            Column = strategy;
 
-            linea[2]= String.valueOf(ArrayObras.get(i).getImagen());
-            System.out.println(linea.toString());
-            writer.writeNext(linea);
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8))) {
+                CsvToBean<DatosObrasArte> csvToBean = new CsvToBeanBuilder<DatosObrasArte>(br)
+                        .withType(DatosObrasArte.class)
+                        .withMappingStrategy(Column)
+                        .withIgnoreLeadingWhiteSpace(true)
+                        .build();
+                obrasArtes = csvToBean.parse();
+            }
         }
+        return Optional.of(obrasArtes);
+    }
+
+    public void crearObra(String titulo, int precio, File rutaImag, String path,boolean append) throws IOException {
+        DatosObrasArte obra = new DatosObrasArte(titulo,precio,rutaImag);
+        String newLine = "\n"+titulo+","+precio+","+rutaImag;
+        ArrayObras.add(obra);
+        FileOutputStream os = new FileOutputStream(path  + "WEB-INF/classes" + File.separator + "Obras.csv", append);
+        os.write(newLine.getBytes());
+        os.close();
+
         System.out.println(ArrayObras.toString()+"en servicio obras.");
-        writer.close();
     }
 
     public ArrayList<DatosObrasArte> getArrayObras() {

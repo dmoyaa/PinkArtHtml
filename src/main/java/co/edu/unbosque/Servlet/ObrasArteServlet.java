@@ -58,8 +58,9 @@ class ObrasArteServlet extends HttpServlet {
         catch (ServletException e) {
             e.printStackTrace();
         }
+        String path = getServletContext().getRealPath("")+ File.separator;
         DatosObrasArte obra = new DatosObrasArte(t,p,imagen);
-        new ServicioObras().crearObra(t,p,imagen, rutaArchivo);
+        new ServicioObras().crearObra(t,p,imagen, path,true);
         RequestDispatcher dispatcher= request.getRequestDispatcher("./prueba.html");
         try{
             dispatcher.forward(request, response);

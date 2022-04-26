@@ -9,13 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09097394-7ac6-47ee-a82f-f61b2dbf6f17" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Obras.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Operaciones/ServicioObras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Operaciones/ServicioObras.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Servlet/ObrasArteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/Servlet/ObrasArteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PinkArtHtml2-1.0-SNAPSHOT/WEB-INF/classes/usuarios.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/PinkArtHtml2-1.0-SNAPSHOT/WEB-INF/classes/usuarios.csv" afterDir="false" />
-    </list>
+    <list default="true" id="09097394-7ac6-47ee-a82f-f61b2dbf6f17" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,6 +170,7 @@
       <workItem from="1649640688738" duration="5025000" />
       <workItem from="1650561429030" duration="1785000" />
       <workItem from="1650646412669" duration="3385000" />
+      <workItem from="1650941753019" duration="4456000" />
     </task>
     <servers />
   </component>

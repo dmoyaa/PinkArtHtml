@@ -48,7 +48,7 @@ class LoginServlet extends HttpServlet {
                 RequestDispatcher dispatcher = request.getRequestDispatcher("./artistas.html");
                 dispatcher.forward(request, response);
             } else if (userFounded.getRole().equals("Comprador")) {
-                RequestDispatcher dispatcher = request.getRequestDispatcher("./");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("./piezas.html");
                 dispatcher.forward(request, response);
             }
         } else {
